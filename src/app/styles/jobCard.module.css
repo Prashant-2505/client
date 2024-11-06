@@ -1,0 +1,41 @@
+.card {
+    min-height: 100%;
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+
+    -webkit-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.75);
+
+    .job_name {
+        text-align: left;
+    }
+
+    .company_name {
+        color: var(--secondary-text);
+        text-align: left;
+
+    }
+
+    .job_details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            color: var(--primary-text);
+        }
+    }
+
+    button {
+        background: black;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        width: 90%;
+        margin-top: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,59 @@
+/* General container for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Set the width of the dropdown */
+  }
+  
+  /* Style the header button */
+  .dropdownHeader {
+    padding: 10px 20px;
+    background-color: var(--btn-primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Ensure header takes up the full width */
+  }
+  
+  .dropdownHeader:hover {
+    background-color: var(--btn-secondary);
+  }
+  
+  /* Style the dropdown items container */
+  .dropdownItems {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack items vertically */
+    gap: 5px; /* Space between items */
+    width: 100%; /* Ensure the container takes the full width of the header */
+    position: absolute;
+    top: 100%; /* Position directly below the header */
+    left: 0;
+    z-index: 10; /* Ensure items appear above other content */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Show the dropdown items when the dropdown is open */
+  .dropdownItems.open {
+    display: flex;
+  }
+  
+  /* Style each dropdown item */
+  .dropdownItem {
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* Ensure item takes up the full width */
+  }
+  
+  .dropdownItem:hover {
+    background-color: #ddd;
+  }
+  

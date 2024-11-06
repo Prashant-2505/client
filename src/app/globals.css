@@ -9,6 +9,8 @@
   --primary-text: black;
   --secondary-text: #6D7482; /* Dark Gray */
   --accent-color: #ffc107; /* Golden Yellow */
+  --btn-primary: #007bff;
+  --btn-secondary: #0056b3;
 }
 
 /* Global reset */
@@ -36,9 +38,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline; /* Underline on hover for better accessibility */
-}
+
 
 /* Utility classes */
 .text-secondary {
