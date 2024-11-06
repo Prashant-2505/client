@@ -2,12 +2,12 @@
 
 /* Define color variables for the "Classic & Professional" palette */
 :root {
-  --primary-color:  rgb(132, 132, 189); 
-  --secondary-color: #C9E9D2; 
-  --primary-background-color: rgb(132, 132, 189); 
-  --secondary-background-color:  rgb(112, 112, 161);
+  --primary-color:  #FFFFFF; 
+  --secondary-color: #F3F4F6; 
+  --primary-background-color: #FFFFFF; 
+  --secondary-background-color:  #F3F4F6;
   --primary-text: black;
-  --secondary-text: #FFFFFF; /* Dark Gray */
+  --secondary-text: #6D7482; /* Dark Gray */
   --accent-color: #ffc107; /* Golden Yellow */
 }
 
