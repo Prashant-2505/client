@@ -1,3 +1,4 @@
+import JobCard from "./components/JobCard";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -72,17 +73,18 @@ export default function Home() {
 
       <div className={styles.container_3}>
         <h1>Featured Jobs</h1>
-        <ul className={styles.job_category}>
+        <ul className={styles.job_data}>
           <li>
-            <p>Logo</p>
-            <div>
-              <p>Technology</p>
-              <p>No. of jobs</p>
-            </div>
+            <JobCard/>
           </li>
-
-      
+          <li>
+            <JobCard/>
+          </li>
+          <li>
+            <JobCard/>
+          </li>
         </ul>
+        <button>view more</button>
       </div>
     </div>
   );
