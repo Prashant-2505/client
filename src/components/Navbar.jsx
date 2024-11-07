@@ -16,7 +16,7 @@ const Navbar = () => {
   const user = useSelector((state) => state.auth.user);
 
   useEffect(() => {
-    setIsClient(true); // Mark component as mounted after client-side rendering
+    setIsClient(true); // Mark component as mounted after client-side rendering.
   }, []);
 
   if (!isClient) {
