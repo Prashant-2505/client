@@ -1,4 +1,4 @@
-import JobCard from "./components/JobCard";
+import JobCard from "../components/JobCard";
 import styles from "./page.module.css";
 
 export default function Home() {
