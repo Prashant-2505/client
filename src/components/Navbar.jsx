@@ -9,8 +9,9 @@ const Navbar = () => {
   const [isClient, setIsClient] = useState(false); // state to track client-side rendering
 
   const item = [
-    { name: "Login as job seeker", link: "/login" },
-    { name: "Login as recruiter", link: "/register" },
+    { name: "Login as job seeker", link: "/login/job-seeker" },
+    { name: "Login as recruiter", link: "/login/recruiter" },
+    { name: "Login as interviewer", link: "/login/interviewer" }
   ];
 
   const user = useSelector((state) => state.auth.user);
@@ -32,7 +33,7 @@ const Navbar = () => {
         <ul>
           <li>Activity</li>
           <li>Opportunity</li>
-          <li>Profile</li>
+          {user && <Link href={"/profile"}><li>Profile</li></Link>}
           <li>
             {user ? (
               <button>Log out</button>
