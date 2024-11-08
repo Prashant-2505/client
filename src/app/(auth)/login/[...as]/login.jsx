@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import styles from "../../styles/login.module.css";
+import styles from "../../../styles/login.module.css";
 import Link from "next/link";
 import { Eye } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-const Login = () => {
+const Login = ({as}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
