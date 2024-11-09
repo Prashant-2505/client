@@ -45,7 +45,7 @@ const Register = ({as}) => {
       console.log(result);
 
       alert("Sign up successful");
-      router.push("/");
+      router.push(`/profile/${as}`);
 
       const { user, token } = result;
       dispatch(login({ user, token }));
