@@ -1,0 +1,84 @@
+.header {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 7rem;
+    position: relative;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem 1rem 2rem;
+    position: relative; /* Needed for the profile image to overlap */
+}
+
+.profile_name {
+    h1 {
+        color: black;
+    }
+
+    p {
+        color: var(--secondary-background);
+        font-size: 1.4rem;
+    }
+}
+
+.resume {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: var(--btn-extra);
+    color: var(--primary-color);
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    .social_contact {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+
+    .social_links {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+
+        li {
+            border: 1px solid var(--secondary-background-color);
+            background-color: var(--secondary-color);
+            display: flex;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease; /* Smooth animation */
+        }
+
+        li:hover {
+            transform: scale3d(1.1, 1.1, 1); /* Slightly enlarge on hover */
+        }
+    }
+}
+
+.profile_img {
+    height: 7rem; /* Full height of the header */
+    width: 7rem; /* Adjust size based on your needs */
+    background-color: black;
+    border-radius: 50%; /* Makes it circular */
+    position: absolute;
+    top: 30%; /* Move the image vertically to center */
+    left: 5%; /* Align to the left */
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 1; /* Make sure it's on top of the header */
+}
