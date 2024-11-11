@@ -12,7 +12,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 4rem 2rem 1rem 2rem;
-    position: relative; /* Needed for the profile image to overlap */
+    position: relative;
+    /* Needed for the profile image to overlap */
 }
 
 .profile_name {
@@ -62,23 +63,65 @@
             display: flex;
             padding: 0.5rem;
             cursor: pointer;
-            transition: transform 0.3s ease; /* Smooth animation */
+            transition: transform 0.3s ease;
+            /* Smooth animation */
         }
 
         li:hover {
-            transform: scale3d(1.1, 1.1, 1); /* Slightly enlarge on hover */
+            transform: scale3d(1.1, 1.1, 1);
+            /* Slightly enlarge on hover */
         }
     }
 }
 
 .profile_img {
-    height: 7rem; /* Full height of the header */
-    width: 7rem; /* Adjust size based on your needs */
+    height: 7rem;
+    /* Full height of the header */
+    width: 7rem;
+    /* Adjust size based on your needs */
     background-color: black;
-    border-radius: 50%; /* Makes it circular */
+    border-radius: 50%;
+    /* Makes it circular */
     position: absolute;
-    top: 30%; /* Move the image vertically to center */
-    left: 5%; /* Align to the left */
-    transform: translateY(-50%); /* Center vertically */
-    z-index: 1; /* Make sure it's on top of the header */
+    top: 30%;
+    /* Move the image vertically to center */
+    left: 5%;
+    /* Align to the left */
+    transform: translateY(-50%);
+    /* Center vertically */
+    z-index: 1;
+    /* Make sure it's on top of the header */
+}
+
+
+
+/* tab */
+.skill_section {
+    background-color: blue;
+    width: 100%;
+    display: none;
+}
+
+.tab_skill_item {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    >li {
+        background-color: var(--secondary-background-color);
+        padding: 0.3rem 0.6rem;
+        border-radius: 10px;
+    }
+}
+
+.tab_education_item {
+    list-style: none;
+    
+    li {
+        background-color: var(--secondary-background-color);
+        padding: 0.3rem 0.6rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
 }
