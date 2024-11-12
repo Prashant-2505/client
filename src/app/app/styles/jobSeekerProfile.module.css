@@ -42,35 +42,44 @@
 }
 
 .social {
-    display: flex;
-    justify-content: space-between;
     padding: 1rem 2rem;
 
-    .social_contact {
+
+    div {
         display: flex;
-        list-style: none;
-        gap: 1rem;
+        justify-content: space-between;
+
+        .social_contact {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+        }
+
+        .social_links {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+
+            li {
+                border: 1px solid var(--secondary-background-color);
+                background-color: var(--secondary-color);
+                display: flex;
+                padding: 0.5rem;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+                /* Smooth animation */
+            }
+
+            li:hover {
+                transform: scale3d(1.1, 1.1, 1);
+                /* Slightly enlarge on hover */
+            }
+        }
     }
 
-    .social_links {
-        display: flex;
-        list-style: none;
-        gap: 1rem;
-
-        li {
-            border: 1px solid var(--secondary-background-color);
-            background-color: var(--secondary-color);
-            display: flex;
-            padding: 0.5rem;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            /* Smooth animation */
-        }
-
-        li:hover {
-            transform: scale3d(1.1, 1.1, 1);
-            /* Slightly enlarge on hover */
-        }
+    p {
+        margin-top: 1rem;
+        font-weight: 500;
     }
 }
 
@@ -117,11 +126,52 @@
 
 .tab_education_item {
     list-style: none;
-    
+
     li {
         background-color: var(--secondary-background-color);
         padding: 0.3rem 0.6rem;
         border-radius: 10px;
         margin-bottom: 1rem;
+    }
+}
+
+.tab_project_item {
+    list-style: none;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        background-color: var(--secondary-background-color);
+        padding: 0.3rem 0.6rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .tech {
+        display: flex;
+        margin-top: 0.5rem;
+        gap: 2rem;
+
+        ul {
+            display: flex;
+
+
+            li {
+                background-color: var(--primary-background-color);
+                padding: 0.3rem 0.6rem;
+                border-radius: 10px;
+                margin-right: 1rem;
+            }
+        }
+
+
+    }
+
+    .link {
+        span {
+            margin-right: 2rem;
+        }
     }
 }
